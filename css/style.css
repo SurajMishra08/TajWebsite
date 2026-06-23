@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .a{
     color: #ad8b3a;
 }
@@ -52,58 +52,103 @@
 .hero>div:hover .hide{
   visibility: visible;
 }
-=======
-.a{
-    color: #ad8b3a;
+
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    min-height: 40vh;
+  }
+  .hero .col-sm-3 {
+    flex: 1 1 100%;
+    border-right: none !important;
+    margin-bottom: 1rem;
+  }
+
+  /* Typography */
+  h1, h5, h6, p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Inside boxes */
+  .inside {
+    width: 100% !important;
+    padding: 1rem;
+    transform: translateY(0);
+  }
+
+  /* Footer */
+  .footer input, .footer .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .suraj {
+    flex-direction: column;
+    text-align: center;
+  }
+  .good p {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-wrap: wrap;
+    min-height: 50vh;
+  }
+  .hero .col-sm-3 {
+    flex: 1 1 50%;
+    margin-bottom: 1rem;
+  }
+
+  /* Splide carousel */
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  .inside {
+    width: 90% !important;
+    padding: 1rem;
+  }
+
+  /* Typography */
+  h1, h5 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
-.inside{
-    transform: translateY(-30px);
+@media (max-width: 992px) {
+  /* Hero section */
+  .hero .col-sm-3 {
+    flex: 1 1 50%;
+  }
+
+  /* Splide carousel */
+  .splide__slide {
+    margin: 0.5rem;
+  }
+
+  /* Footer */
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
 }
-.suraj>div>span>a{
-    text-decoration: none;
-    color: white;
-}
-.good>p>span>a{
-    text-decoration: none;
-    color: white;
-}
-.head{
-    top: 60%;
-    left: 20%;
-}
-.headed{
-    position: absolute;
-    top: 80%;
-    left: 12%;
-}
-.insid{
-    transform: translateY(-40px);
-    width: 95%;
-    margin-left: auto;
-}
-.headi{
-    top: 70%;
-    left: 20%;
-}
-.headedi{
-    position: absolute;
-    top: 85%;
-    left: 12%;
-}
-.hero{
-    background-image: url("../img/1.png");
-    background-size: cover;
-    width: 100%;
-    height: 500px;
-}
-.hide{
-    visibility: hidden;
-}
-.hero>div:hover{
-    background-color:rgba(255, 255, 255, .5);
-}
-.hero>div:hover .hide{
-  visibility: visible;
-}
->>>>>>> 06c080de94fcbea0e18b023dc930298f056b7f68

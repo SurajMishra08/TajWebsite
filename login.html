@@ -28,26 +28,60 @@
 </head>
 <body>
   <!-- Navbar start -->
-  <div class="row text-light sticky-top bg-light">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a href="index.html">
-          <img src="img/tajlogo2.png" alt="Taj Logo" class="ms-4">
-        </a>
-        <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link ms-4" href="des.html">DESTINATIONS</a></li>
-            <li class="nav-item"><a class="nav-link ms-4" href="hotels.html">HOTELS</a></li>
-            <li class="nav-item"><a class="nav-link ms-4" href="dining.html">DINING</a></li>
-            <li class="nav-item"><a class="nav-link ms-4" href="offer.html">OFFERS</a></li>
-            <li class="nav-item"><a class="nav-link ms-4" href="index.html">HOME</a></li>
-            <li class="nav-item"><a class="nav-link ms-5 ps-4" href="login.html">LOGIN / JOIN</a></li>
-            <button class="btn text-light rounded-0 ms-5" style="background-color:#ad8b3a;">BOOK A STAY</button>
+  <!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand ms-3" href="index.html">
+      <img src="img/tajlogo2.png" alt="Logo" style="height:40px;">
+    </a>
+
+    <!-- Toggler (Hamburger icon for mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item">
+          <a class="nav-link a" href="des.html">DESTINATIONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="hotels.html">HOTELS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="dining.html">DINING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="offer.html">OFFERS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link a dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            MEMBERSHIP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </div>
-      </div>
-    </nav>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link a" href="login.html">LOGIN / JOIN</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn text-light rounded-0 ms-lg-3 mt-2 mt-lg-0" style="background-color:#ad8b3a;">BOOK A STAY</button>
+        </li>
+      </ul>
+    </div>
   </div>
+</nav>
+
+
   <!-- Navbar end -->
 
   <!-- Login form -->
@@ -69,4 +103,6 @@
     </div>
   </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
